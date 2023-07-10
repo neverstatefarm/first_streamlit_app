@@ -28,8 +28,3 @@ import requests
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + "fruit choice")
 
 
-# take the json version of the repsonse and normalize it
-fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
-# output it the screnn as a table
-streamlit.dataframe(fruityvice_normalized)
-
